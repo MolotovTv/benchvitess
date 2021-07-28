@@ -1,0 +1,13 @@
+syntax = "proto3";
+package benchvitess;
+
+option go_package = "github.com/molotovtv/benchvitess;benchvitess";
+
+message Obj1 {
+    string Type = 1;
+    string Value = 2;
+}
+
+message Obj2 {
+    map<uint32, Obj1> Objects = 1;
+}
